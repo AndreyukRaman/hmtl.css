@@ -34,7 +34,7 @@ const cardsData= [
 
 export default function RowCards(){
     return(
-<div className="flex flex-row items-center gap-[30px] w-[1046px] h-[300px] mx-auto">
+<div className="flex flex-row flex-wrap items-center  w-[1046px] h-[300px] gap-[20px] mx-[-20px] ">
     {cardsData.map((card,index)=>(
         <Card  key={index}
                icon={card.icon}

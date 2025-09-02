@@ -17,7 +17,8 @@ interface CardProps{
 
 export default function Card({icon,title, description} : CardProps){
     return(
-        <div className="flex flex-col gap-[20px] justify-center items-start pl-[40px] w-[328px] h-[300px]  bg-[#B6D7FF]  bg-white [box-shadow:0px_13px_19px_rgba(0,0,0,0.30)]">
+        <div className="w-[33%]  ">
+        <div className="flex flex-col  justify-center items-start gap-[20px] pl-[40px]  h-[300px]   bg-[#B6D7FF]  bg-white [box-shadow:0px_13px_19px_rgba(0,0,0,0.30)]">
 
 
 
@@ -29,6 +30,7 @@ export default function Card({icon,title, description} : CardProps){
     <p className={`${montserrat.className} w-[222px] h-[60px] font-normal text-[14px] leading-[20px] tracking-[0.2px] text-[#737373]`}>
         {description}
     </p>
+        </div>
         </div>
     )
 }
