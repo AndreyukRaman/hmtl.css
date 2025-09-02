@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 
 export default function Header(){
     return (
-        <header className={`${montserrat.className} `} >
+        <header className={`${montserrat.className} my-navigation`} >
             <div className="container mx-auto flex items-center justify-between p-6">
                 <h3 className="header-title">Brandname</h3>
                 <nav className="hidden md:flex space-x-8">

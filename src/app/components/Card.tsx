@@ -17,7 +17,7 @@ interface CardProps{
 
 export default function Card({icon,title, description} : CardProps){
     return(
-        <div className="flex flex-col gap-[20px] justify-center items-start pl-[40px] w-[328px] h-[300px]  bg-[#B6D7FF]  bg-white">
+        <div className="flex flex-col gap-[20px] justify-center items-start pl-[40px] w-[328px] h-[300px]  bg-[#B6D7FF]  bg-white [box-shadow:0px_13px_19px_rgba(0,0,0,0.30)]">
 
 
 
