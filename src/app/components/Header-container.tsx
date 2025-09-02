@@ -1,10 +1,15 @@
-import {Montserrat} from 'next/font/google';
+
+import RowCards from "@/app/components/Row-cards";
+import {Montserrat} from "next/font/google";
+
+
 
 const montserrat = Montserrat({
     subsets: ['latin'], // нужные символы
     weight: ['400', '500', '700'], // нужные веса
     variable: '--font-montserrat', // опционально, для CSS переменной
 });
+
 
 export default function HeaderContainer() {
     return(
@@ -22,8 +27,10 @@ export default function HeaderContainer() {
             </h4>
 
             <button className={`${montserrat.className} button2 px-6 py-3 font-bold text-[14px] leading-[22px] tracking-[0.2px] text-white flex items-center gap-2`}>
-                JOIN US
+                Join us
             </button>
+<RowCards/>
+
         </div>
 
 
