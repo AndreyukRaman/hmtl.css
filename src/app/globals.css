@@ -24,3 +24,49 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* container */
+.container{
+
+width: 1322px;
+height: 91px;
+left: calc(50% - 1322px/2);
+top: 0px;
+}
+
+
+
+.header-title {
+        /*font-family: 'Montserrat', sans-serif;*/
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        color: #ECECEC;
+        text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+
+
+/* button.btn.primary-color */
+/* Auto layout */
+.button2{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px 25px;
+gap: 15px;
+
+
+/*width: 137px;*/
+height: 52px;
+left: 0px;
+top: 0px;
+
+/* primary-color */
+background: #FF6551;
+border-radius: 5px;
+}
+
+
