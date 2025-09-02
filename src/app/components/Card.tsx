@@ -17,7 +17,7 @@ interface CardProps{
 
 export default function Card({icon,title, description} : CardProps){
     return(
-        <div className="w-[33%]  ">
+        <div className="w-[33.333%] px-[15px]">
         <div className="flex flex-col  justify-center items-start gap-[20px] pl-[40px]  h-[300px]   bg-[#B6D7FF]  bg-white [box-shadow:0px_13px_19px_rgba(0,0,0,0.30)]">
 
 
