@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 export default function HeaderContainer() {
     return(
         <div className=" min-h-screen bg-[url('/background.svg')] bg-cover bg-center pt-[100px]">
-            <div className="white-block"></div>
+            {/*<div className="white-block"></div>*/}
         <div className="flex flex-col items-center gap-8 px-6 py-20 max-w-[1046px] mx-auto relative ">
             <h5 className={`${montserrat.className} font-bold text-[16px] leading-[24px] tracking-[0.1px] text-[#FFC652]`}>
                 Join Us
@@ -32,7 +32,7 @@ export default function HeaderContainer() {
                 Join us
             </button>
 
-<RowCards/>
+         <RowCards/>
 
         </div>
 
