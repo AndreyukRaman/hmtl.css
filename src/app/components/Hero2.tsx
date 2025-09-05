@@ -19,7 +19,7 @@ export default function Hero2(){
                     Courses
                 </h6>
 
-                <h2 className={`${montserrat.className} max-w-[385px] max-h-auto not-italic font-bold text-[40px] leading-[50px] tracking-[0.2px] text-[#252B42] flex-none order-1 grow-0`}>Get Quality Education</h2>
+                <h2 className={`${montserrat.className}  max-h-auto not-italic font-bold text-[40px] leading-[50px] tracking-[0.2px] text-[#252B42] flex-none order-1 grow-0`}>Get Quality Education</h2>
                 <p className={`${montserrat.className} max-w-[385px] h-[60px] font-normal text-[14px] leading-[20px] tracking-[0.2px] text-[#737373]`}>Problems trying to resolve the conflict between
                     the two major realms of Classical physics: Newtonian mechanics </p>
             </div>

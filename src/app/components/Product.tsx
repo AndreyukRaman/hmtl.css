@@ -9,22 +9,59 @@ const montserrat = Montserrat({
 });
 
 
+interface ProductData {
+    productImage: string;
+    saleImage?: string;
+    likeIcon: string;
+    basketIcon: string;
+    eyeIcon: string;
+    linkText: string;
+    ratingImage: string;
+    title: string;
+    description: string;
+    downloadTop?: string;
+    downloadBottom?: string;
+    h6Text?: string;
+    priceOld: string;
+    priceNew: string;
+    buttonText: string;
+}
 
 
-export default function Product() {
+export default function Product({
+                                    productImage,
+                                    saleImage,
+                                    likeIcon,
+                                    basketIcon,
+                                    eyeIcon,
+                                    linkText,
+                                    ratingImage,
+                                    title,
+                                    description,
+                                    downloadTop,
+                                    downloadBottom,
+                                    h6Text,
+                                    priceOld,
+                                    priceNew,
+                                    buttonText,
+                                }:ProductData) {
     return (
         <div className="flex flex-col items-center max-w-[238px] p-0">
 
             <div className="relative w-[250px] h-[300px]">
-                <Image src="/product1.svg" alt="product1" fill className="object-cover" />
+                <Image src={productImage} alt={title} fill className="object-cover" />
+                {saleImage && (
                 <div className="absolute top-4 left-4">
-                    <Image src="/sale.svg" alt="sale" width={50} height={24} />
+                    <Image src={saleImage} alt="sale" width={50} height={24} />
                 </div>
-                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
-                    <Image src="/like.svg" width={40} height={40} alt="like" />
-                    <Image src="/basket.svg" width={40} height={40} alt="basket" />
-                    <Image src="/eye.svg" width={40} height={40} alt="eye" />
+                )}
+                {likeIcon && basketIcon && eyeIcon && ( <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
+
+                    <Image src={likeIcon} width={40} height={40} alt="like" />
+                    <Image src={basketIcon} width={40} height={40} alt="basket" />
+                    <Image src={eyeIcon} width={40} height={40} alt="eye" />
                 </div>
+                )}
             </div>
 
 
@@ -32,43 +69,43 @@ export default function Product() {
 
                 <div className="flex items-center gap-2">
                     <a className={`${montserrat.className} text-[#FF6551] font-bold text-[14px] leading-[24px]`} href="#">
-                        Books Library
+                        {linkText}
                     </a>
-                    <Image src="/rating.svg" width={50} height={25} alt="rating" />
+                    <Image src={ratingImage} width={50} height={25} alt="rating" />
                 </div>
 
 
                 <h5 className={`${montserrat.className} font-bold text-[16px] leading-[24px] text-[#252B42]`}>
-                    Our Experts Teacher
+                    {title}
                 </h5>
 
 
                 <p className={`${montserrat.className} font-normal text-[14px] leading-[20px] text-[#737373] max-w-full`}>
-                    We focus on ergonomics and meeting you....
+                    {description}
                 </p>
 
 
                 <div className="flex items-center gap-2">
 
                     <div className="flex flex-col items-center">
-                        <Image src="/download.svg" alt="download top" width={7} height={11} />
-                        <Image src="/download2.svg" alt="download bottom" width={16} height={5} />
+                        <Image src={downloadTop} alt="download top" width={7} height={11} />
+                        <Image src={downloadBottom} alt="download bottom" width={16} height={5} />
                     </div>
 
                     <h6 className={`${montserrat.className} text-[14px] leading-[24px] text-[#737373] font-bold`}>
-                        15 Sales
+                        {h6Text}
                     </h6>
                 </div>
                 <div className="flex items-center gap-2">
                 <h5
                     className={`${montserrat.className} h-[24px]  not-italic font-bold text-[16px] leading-[24px] text-center tracking-[0.1px] text-[#BDBDBD] flex-none order-0 grow-0`}
                 >
-                    $16.48
+                    {priceOld}
                 </h5>
                 <h5
                     className={`${montserrat.className} h-[24px]  not-italic font-bold text-[16px] leading-[24px] text-center tracking-[0.1px] text-[#2435A1] flex-none order-0 grow-0`}
                 >
-                    $6.48
+                    {priceNew}
                 </h5>
                 </div>
 
@@ -78,7 +115,7 @@ export default function Product() {
                     <h6
                         className={`${montserrat.className} h-[24px]  not-italic font-bold text-[14px] leading-[24px] tracking-[0.2px] text-[#FF6551] flex-none order-0 grow-0`}
                     >
-                       Learn More
+                        {buttonText}
                     </h6>
 
                 </button>
