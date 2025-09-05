@@ -1,4 +1,5 @@
 import Product from "@/app/components/Product";
+import {ProductData} from "@/app/components/Product";
 
 const productsData: ProductData[] = [
     {
