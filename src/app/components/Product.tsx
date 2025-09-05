@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 });
 
 
-interface ProductData {
+export interface ProductData {
     productImage: string;
     saleImage?: string;
     likeIcon: string;
