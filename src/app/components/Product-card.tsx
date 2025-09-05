@@ -1,5 +1,6 @@
-import Product from "@/app/components/Product";
-import {ProductData} from "@/app/components/Product";
+// src/app/components/ProductCard.tsx
+import Product from "./Product";
+import {ProductData} from "@/app/components/products.types";
 
 const productsData: ProductData[] = [
     {
@@ -21,10 +22,16 @@ const productsData: ProductData[] = [
     },
     {
         productImage: "/product2.svg",
+        saleImage: "/sale.svg",
+        likeIcon: "/like.svg",
+        basketIcon: "/basket.svg",
+        eyeIcon: "/eye.svg",
         linkText: "Digital Library",
         ratingImage: "/rating.svg",
         title: "Advanced Course",
         description: "Watch our Courses",
+        downloadTop: "/download.svg",
+        downloadBottom: "/download2.svg",
         h6Text: "20 Sales",
         priceOld: "$18.00",
         priceNew: "$9.99",
@@ -32,28 +39,39 @@ const productsData: ProductData[] = [
     },
     {
         productImage: "/product3.svg",
+        saleImage: "/sale.svg",
+        likeIcon: "/like.svg",
+        basketIcon: "/basket.svg",
+        eyeIcon: "/eye.svg",
         linkText: "Audio Books",
         ratingImage: "/rating.svg",
         title: "Master Class",
         description: "Deep dive into new subjects...",
+        downloadTop: "/download.svg",
+        downloadBottom: "/download2.svg",
+        h6Text: "25 Sales",
         priceOld: "$20.00",
         priceNew: "$12.00",
         buttonText: "Learn More",
     },
     {
         productImage: "/product4.svg",
+        saleImage: "/sale.svg",
+        likeIcon: "/like.svg",
+        basketIcon: "/basket.svg",
+        eyeIcon: "/eye.svg",
         linkText: "Video Library",
         ratingImage: "/rating.svg",
         title: "Creative Workshop",
         description: "Get Quality Education",
+        downloadTop: "/download.svg",
+        downloadBottom: "/download2.svg",
+        h6Text: "30 Sales",
         priceOld: "$22.00",
         priceNew: "$14.50",
         buttonText: "Learn More",
     },
 ];
-
-
-
 
 export default function ProductCard() {
     return (
@@ -64,7 +82,5 @@ export default function ProductCard() {
                 </div>
             ))}
         </div>
-
-
     );
 }
