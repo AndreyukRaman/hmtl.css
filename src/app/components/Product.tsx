@@ -1,7 +1,7 @@
 // src/app/components/Product.tsx
 import Image from "next/image";
-import { Montserrat } from "next/font/google";
 import {ProductData} from "@/app/components/products.types";
+import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -68,8 +68,8 @@ export default function Product(props: ProductData) {
                 </div>
 
                 <div className="flex items-center gap-2">
-                    <h5 className={`${montserrat.className} text-[16px] leading-[24px] text-[#BDBDBD]`}>{priceOld}</h5>
-                    <h5 className={`${montserrat.className} text-[16px] leading-[24px] text-[#2435A1]`}>{priceNew}</h5>
+                    <h5 className={`!${montserrat.className} font-bold text-[16px] leading-[24px] text-center tracking-[0.1px] text-[#BDBDBD] flex-none order-none flex-grow-0`}>{priceOld}</h5>
+                    <h5 className={`!${montserrat.className} font-bold text-[16px] leading-[24px] text-center tracking-[0.1px] text-[#2435A1] flex-none order-1 flex-grow-0`}>{priceNew}</h5>
                 </div>
 
                 <button className="flex flex-row items-center px-[20px] py-[10px] gap-[10px] w-[141px] h-[44px] border border-[#FF6551] rounded-[37px]">
