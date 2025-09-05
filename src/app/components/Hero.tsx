@@ -21,8 +21,9 @@ interface Props{
 
 export default function Hero({title,description,image,firstColumnIsImage = true}:Props){
     return(
+        <div className="w-full bg-white py-10">
         <div className="max-w-[1046px] mx-auto mb-10 px-6 flex flex-col gap-12">
-        <div className={`flex flex-col md:flex-row items-center bg-white gap-6 ${firstColumnIsImage ? "" : "md:flex-row-reverse"} `}>
+        <div className={`flex flex-col md:flex-row items-center  gap-6 ${firstColumnIsImage ? "" : "md:flex-row-reverse"} `}>
             <div className="w-full md:w-1/2">
                 <Image src={image} alt={title} width={600} height={400} className="w-full h-auto"/>
             </div>
@@ -33,6 +34,7 @@ export default function Hero({title,description,image,firstColumnIsImage = true}
 
  <Image src="/learnmore.svg" alt="learnmore.svg" width={100} height={24}/>
             </div>
+        </div>
         </div>
         </div>
     )
