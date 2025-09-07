@@ -3,6 +3,7 @@ import HeaderContainer from "@/app/components/Header-container";
 import Hero from "@/app/components/Hero";
 import Hero2 from "@/app/components/Hero2";
 import Hero3 from "@/app/components/Hero3";
+import Hero4 from "@/app/components/Hero4";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ the two major realms of Classical physics:
 Newtonian mechanics "  firstColumnIsImage={false}/>
           <Hero2/>
           <Hero3/>
+          <Hero4/>
       </>
 
 
