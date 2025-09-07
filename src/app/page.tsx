@@ -5,6 +5,7 @@ import Hero2 from "@/app/components/Hero2";
 import Hero3 from "@/app/components/Hero3";
 import Hero4 from "@/app/components/Hero4";
 import Hero5 from "@/app/components/Hero5";
+import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ Newtonian mechanics "  firstColumnIsImage={false}/>
           <Hero3/>
           <Hero4/>
           <Hero5/>
+          <Footer/>
       </>
 
 

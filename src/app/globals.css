@@ -67,6 +67,11 @@ background: #FF6551;
 border-radius: 5px;
 }
 
+.button2:hover{
+    background: black;
+
+}
+
 
 /*.my-navigation{*/
 /*    position: fixed;*/

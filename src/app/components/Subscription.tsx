@@ -22,14 +22,14 @@ export default function Subscription(props: SubcriptionData){
     } = props;
 
     return (
-        <div className=" relative flex flex-col  max-w-[330px]  gap-6 p-10   bg-white">
+        <div className=" relative flex flex-col  gap-6 p-10   bg-white">
             {newSub && (
                 <span className=" flex items-center justify-center absolute -top-6 -right-6  bg-[#E77C40] text-white text-xs w-15 h-15 font-bold px-3 py-3 rounded-full">
           {newSub}
         </span>
             )}
             <Image src={circleImage} alt={circleImage} width={100} height={100}/>
-            <h3 className={`${montserrat.className} max-w-[64] font-bold text-[24px] leading-[50px] text-[#252B42]`}>
+            <h3 className={`${montserrat.className} max-w-[64px] font-bold text-[24px] leading-[50px] text-[#252B42]`}>
                 {free}
             </h3>
             <h6 className={`${montserrat.className} text-[14px] leading-[24px] text-[#737373] font-bold`}>
@@ -47,7 +47,7 @@ export default function Subscription(props: SubcriptionData){
                 {description}
             </h6>
             <button
-                className="flex flex-col items-center px-[40px] py-[15px] gap-[10px] w-[243px] h-[52px] bg-[#FF6551] rounded-[5px] flex-none  self-stretch flex-grow-0">
+                className="flex flex-col items-center px-[40px] py-[15px] gap-[10px]  h-[52px] bg-[#FF6551] rounded-[5px] flex-none  self-stretch flex-grow-0">
                 <h6 className={`${montserrat.className} text-[14px] leading-[24px] text-white font-bold`}>
                     {button}
                 </h6>
@@ -64,7 +64,9 @@ export default function Subscription(props: SubcriptionData){
                                 className="block"
                             />
                         </div>
+                        <div>
                         <span className={`${montserrat.className} font-bold text-[14px] leading-none break-words tracking-[0.2px] text-[#252B42] flex-none order-1 flex-grow-0`}>{item}</span>
+                        </div>
                     </li>
                 ))}
             </ul>

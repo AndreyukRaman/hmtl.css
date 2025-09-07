@@ -75,7 +75,7 @@ const productsData: ProductData[] = [
 
 export default function ProductCard() {
     return (
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(238px,1fr))] gap-7 max-w-[1046px] mx-auto">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(238px,1fr))] gap-6 max-w-[1046px] mx-auto">
             {productsData.map((product, index) => (
                 <Product key={index} {...product} />
             ))}

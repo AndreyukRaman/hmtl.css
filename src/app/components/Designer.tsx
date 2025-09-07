@@ -20,7 +20,7 @@ const montserrat = Montserrat({
 export default function Designer( props: DesignerData ) {
     const { image, description,rating,name,title } = props;
     return (
-        <div className="max-w-[500px] flex flex-col items-center gap-3">
+        <div className=" flex flex-col items-center gap-3">
 
                 <Image src={image} alt={image} width={128} height={128} className="rounded-full" />
             <p className={`${montserrat.className} max-w-[350px] mx-auto text-center  font-normal text-[14px] leading-[20px] text-[#737373]`}>

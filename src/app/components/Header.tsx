@@ -29,7 +29,7 @@ export default function Header(){
                 <nav className="hidden md:flex space-x-8">
                     <a href="#" className={`font-bold text-[14px] leading-[22px] tracking-[0.2px] ${
                         isScrolled ? "!text-[#BDBDBD]" : "!text-white" } text-right`} >Home</a>
-                    <a href="#" className={`font-bold text-[14px] leading-[22px] tracking-[0.2px] ${
+                    <a href="#product" className={`font-bold text-[14px] leading-[22px] tracking-[0.2px] ${
                         isScrolled ? "!text-[#BDBDBD]" : "!text-white" } text-right`} >Product</a>
                     <a href="#" className={`font-bold text-[14px] leading-[22px] tracking-[0.2px] ${
                         isScrolled ? "!text-[#BDBDBD]" : "!text-white" } text-right`} >Pricing</a>
@@ -38,8 +38,8 @@ export default function Header(){
 
                 </nav>
                 <div className="hidden md:flex space-x-4">
-                    <button className={`font-bold text-[14px] leading-[22px] tracking-[0.2px] ${isScrolled ? "!text-[#BDBDBD]" : "!text-white"} text-right`} >Login</button>
-                    <button className={`button2 px-4 py-2 flex items-center gap-2 font-bold text-[14px] leading-[22px] tracking-[0.2px]  ${
+                    <button className={`cursor-pointer font-bold text-[14px] leading-[22px] tracking-[0.2px] ${isScrolled ? "!text-[#BDBDBD]" : "!text-white"} text-right`} >Login</button>
+                    <button className={` cursor-pointer  button2 px-4 py-2 flex items-center gap-2 font-bold text-[14px] leading-[22px] tracking-[0.2px]  ${
                         isScrolled ? "!text-[#BDBDBD]" : "!text-white" }`}>JOIN US
                         <Image src="/arrow.svg" alt="arrow" width={12} height={12}  />
                     </button>

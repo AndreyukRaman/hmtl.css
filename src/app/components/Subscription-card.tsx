@@ -38,7 +38,7 @@ const subscriptionsData : SubcriptionData[] =[
 
 export default function  SubscriptionCard (){
     return(
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[1046px] gap-6 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 max-w-[1046px] gap-6 mx-auto">
             {subscriptionsData.map((subscription: SubcriptionData,index) =>( <Subscription key={index} {...subscription}/>
     ))}
         </div>
