@@ -7,7 +7,7 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "500", "700"
 export default function Hero2() {
     return (
         <div id="product" className="bg-white py-20">
-            <div className="max-w-[1046px] mx-auto px-6 flex flex-col ">
+            <div className="max-w-[1050px] mx-auto px-6 flex flex-col ">
                 <h6 className="text-[#FF6551] font-bold text-[14px] mb-2">Courses</h6>
                 <h2 className={`${montserrat.className} max-w-[500px] font-bold text-[40px] leading-[50px] text-[#252B42]`}>
                     Get Quality Education

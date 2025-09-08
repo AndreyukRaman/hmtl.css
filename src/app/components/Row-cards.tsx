@@ -31,17 +31,17 @@ const cardsData= [
 
 ]
 
-
-export default function RowCards(){
-    return(
-<div className="flex flex-row flex-wrap items-center  w-[1046px] h-[300px]  mx-auto">
-    {cardsData.map((card,index)=>(
-        <Card  key={index}
-               icon={card.icon}
-               title={card.title}
-               description={card.description}/>
-    ))}
-
-</div>
-    )
+export default function RowCards() {
+    return (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto px-4 items-stretch">
+            {cardsData.map((card, index) => (
+                <Card
+                    key={index}
+                    icon={card.icon}
+                    title={card.title}
+                    description={card.description}
+                />
+            ))}
+        </div>
+    );
 }

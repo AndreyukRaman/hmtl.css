@@ -8,7 +8,7 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "500", "700"
 export default function Hero3() {
     return (
 
-        <div className="bg-[#26335D] py-20">
+        <div id="pricing" className="bg-[#26335D] py-20">
             <div className="max-w-[1046px] mx-auto px-6 flex flex-col ">
                 <div className="max-w-[700px] h-[130px] mb-20 gap-3]">
                     <h6 className="text-[#FF6551] font-bold text-[14px] mb-2">Practice Advice</h6>

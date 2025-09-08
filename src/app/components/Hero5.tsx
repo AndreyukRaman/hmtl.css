@@ -28,8 +28,11 @@ export default function Hero5(){
             the two major realms of Classical physics: Newtonian mechanics
         </p>
     </div>
-        <div className="max-w-[700px] mx-auto flex flex-col items-center pt-20  ">
-            <form onSubmit={handleSubmit} className={`${montserrat.className} relative flex flex-row top-0 left-0 right-0 w-full h-[58px] border-1 border-[#E6E6E6]`}>
+        <div className="max-w-[700px] w-full mx-auto px-10 sm:px-0 flex flex-col items-center pt-20">
+            <form
+                onSubmit={handleSubmit}
+                className={`${montserrat.className} flex w-full max-w-[580px] h-[58px] border border-[#E6E6E6] rounded-md overflow-hidden`}
+            >
                 <input
                     type="email"
                     placeholder="Your Email"
@@ -40,13 +43,14 @@ export default function Hero5(){
                 />
 
                 <button
-                    className={`${montserrat.className} inset-0 w-[120px] bg-[#FF6551] border border-[#E6E6E6] rounded-tr-[5px] rounded-br-[5px]`}>
+                    type="submit"
+                    className={`${montserrat.className} w-[120px] bg-[#FF6551] text-white`}
+                >
                     Subscribe
                 </button>
-
-
             </form>
         </div>
+
     </div>
     )
 }

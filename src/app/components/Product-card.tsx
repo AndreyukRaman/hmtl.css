@@ -75,11 +75,13 @@ const productsData: ProductData[] = [
 
 export default function ProductCard() {
     return (
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(238px,1fr))] gap-6 max-w-[1046px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+                    gap-6 sm:gap-6 md:gap-8 lg:gap-10 max-w-[1050px] mx-auto">
             {productsData.map((product, index) => (
-                <Product key={index} {...product} />
+                <div key={index} className="w-full lg:max-w-[250px] mx-auto">
+                    <Product {...product} />
+                </div>
             ))}
         </div>
     );
 }
-

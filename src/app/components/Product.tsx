@@ -28,8 +28,8 @@ export default function Product(props: ProductData) {
     } = props;
 
     return (
-        <div className="flex flex-col items-center max-w-[238px] p-0">
-            <div className="relative w-[250px] h-[300px]">
+        <div className="flex flex-col items-start  p-0">
+            <div className="relative w-[250px] h-[300px] ">
                 <Image src={productImage} alt={title} fill className="object-cover" />
                 <div className="absolute top-4 left-4">
                     <Image src={saleImage} alt="sale" width={50} height={24} />
@@ -41,7 +41,7 @@ export default function Product(props: ProductData) {
                 </div>
             </div>
 
-            <div className="flex flex-col items-start p-[25px_25px_35px] gap-2 w-full">
+            <div className="flex flex-col items-start p-4  gap-2 w-full">
                 <div className="flex items-center gap-2">
                     <a className={`${montserrat.className} text-[#FF6551] font-bold text-[14px] leading-[24px]`} href="#">
                         {linkText}

@@ -25,7 +25,7 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="bg-white py-16">
+        <footer id="contact" className="bg-white py-16">
             <div className="max-w-[1050px] w-full mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 text-[#252B42]">
                 {columns.map((col, index) => (
                     <div key={index} className="flex flex-col gap-3">
