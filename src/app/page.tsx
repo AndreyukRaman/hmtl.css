@@ -17,7 +17,7 @@ the two major realms of Classical physics:
 Newtonian mechanics "  firstColumnIsImage={true}/>
           <Hero  title="Every Client Matters" image="pic2.svg" description="Problems trying to resolve the conflict between
 the two major realms of Classical physics:
-Newtonian mechanics "  firstColumnIsImage={false} videoUrl="https://youtu.be/xfnRI-aIE0E?si=edmgvln9WGiVUZni"/>
+Newtonian mechanics "  firstColumnIsImage={false} videoUrl="https://www.youtube.com/watch?v=sbiQrENxrGI&list=RDsbiQrENxrGI&start_radio=1"/>
           <Hero2/>
           <Hero3/>
           <Hero4/>
