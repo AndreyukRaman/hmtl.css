@@ -1,4 +1,7 @@
+"use client";
 
+
+import {useSubscription} from "@/app/components/subscriptionContext";
 import Image from "next/image";
 import {SubcriptionData} from "@/app/components/subcription.types";
 import { Montserrat } from "next/font/google";
@@ -20,7 +23,7 @@ export default function Subscription(props: SubcriptionData){
     button,
     list,
     } = props;
-
+const {addToOrder} = useSubscription();
     return (
         <div className=" relative flex flex-col  gap-6 p-10   bg-white">
             {newSub && (
@@ -46,7 +49,7 @@ export default function Subscription(props: SubcriptionData){
             <h6 className={`${montserrat.className} text-[14px] leading-[24px] text-[#737373] `}>
                 {description}
             </h6>
-            <button
+            <button onClick={()=>addToOrder(price)}
                 className="flex flex-col items-center px-[40px] py-[15px] gap-[10px]  h-[52px] bg-[#FF6551] rounded-[5px] flex-none  self-stretch flex-grow-0">
                 <h6 className={`${montserrat.className} text-[14px] leading-[24px] text-white font-bold`}>
                     {button}

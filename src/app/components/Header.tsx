@@ -5,6 +5,8 @@ import {useEffect,useState} from "react";
 import Image from "next/image";
 import {Montserrat} from 'next/font/google';
 
+
+
 const montserrat = Montserrat({
     subsets: ['latin'], // нужные символы
     weight: ['400', '500', '700'], // нужные веса
@@ -86,7 +88,7 @@ export default function Header(){
                         ))}
 
                         <div className="flex flex-col gap-2 mt-2">
-                            <button className="px-4 py-2 font-bold border border-[#FF6551] rounded-md text-[#FF6551] w-auto self-start">
+                            <button className="px-4 py-2 font-bold border border-[#FF6551] rounded-md text-white w-auto self-start">
                                 Login
                             </button>
                             <button className="px-4 py-2 flex items-center gap-2 font-bold rounded-md bg-[#FF6551] text-white w-auto self-start">
