@@ -1,6 +1,6 @@
 "use client";
 
-// import dynamic from "next/dynamic";
+import ReactPlayer from 'react-player'
 import { useState } from "react";
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
@@ -70,14 +70,14 @@ export default function Hero({
             {isOpen && videoUrl && (
                 <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
                     <div className="relative w-[90%] max-w-[800px] aspect-video">
-                        {/* @ts-expected-error */}
-                        {/*<ReactPlayer*/}
-                        {/*    url={videoUrl}*/}
-                        {/*    width="100%"*/}
-                        {/*    height="100%"*/}
-                        {/*    controls*/}
-                        {/*    playing*/}
-                        {/*/>*/}
+
+                        <ReactPlayer
+                            src={videoUrl}
+                            width="100%"
+                            height="100%"
+                            controls
+                            playing
+                        />
                         <button
                             onClick={() => setIsOpen(false)}
                             className="absolute top-2 right-2 text-white text-2xl font-bold"
