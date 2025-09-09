@@ -50,7 +50,7 @@ const {addToOrder} = useSubscription();
                 {description}
             </h6>
             <button onClick={()=>addToOrder(price)}
-                className="flex flex-col items-center px-[40px] py-[15px] gap-[10px]  h-[52px] bg-[#FF6551] rounded-[5px] flex-none  self-stretch flex-grow-0">
+                className="flex flex-col items-center px-[40px] py-[15px] gap-[10px]  h-[52px] bg-[#FF6551] rounded-[5px] flex-none  self-stretch flex-grow-0 hover:bg-[#8EC2F2] cursor-pointer">
                 <h6 className={`${montserrat.className} text-[14px] leading-[24px] text-white font-bold`}>
                     {button}
                 </h6>
