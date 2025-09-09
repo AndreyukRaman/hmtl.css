@@ -2,8 +2,9 @@
 import Product from "./Product";
 import {ProductData} from "@/app/components/products.types";
 
-const productsData: ProductData[] = [
+ export const productsData: ProductData[] = [
     {
+        id: "1",
         productImage: "/product1.svg",
         saleImage: "/sale.svg",
         likeIcon: "/like.svg",
@@ -20,7 +21,7 @@ const productsData: ProductData[] = [
         priceNew: "$6.48",
         buttonText: "Learn More",
     },
-    {
+    {   id: "2",
         productImage: "/product2.svg",
         saleImage: "/sale.svg",
         likeIcon: "/like.svg",
@@ -38,6 +39,7 @@ const productsData: ProductData[] = [
         buttonText: "Learn More",
     },
     {
+        id:"3",
         productImage: "/product3.svg",
         saleImage: "/sale.svg",
         likeIcon: "/like.svg",
@@ -54,7 +56,7 @@ const productsData: ProductData[] = [
         priceNew: "$12.00",
         buttonText: "Learn More",
     },
-    {
+    {   id:"4",
         productImage: "/product4.svg",
         saleImage: "/sale.svg",
         likeIcon: "/like.svg",
@@ -77,8 +79,8 @@ export default function ProductCard() {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
                     gap-6 sm:gap-6 md:gap-8 lg:gap-10 max-w-[1050px] mx-auto">
-            {productsData.map((product, index) => (
-                <div key={index} className="w-full lg:max-w-[250px] mx-auto">
+            {productsData.map((product) => (
+                <div key={product.id} className="w-full lg:max-w-[250px] mx-auto">
                     <Product {...product} />
                 </div>
             ))}

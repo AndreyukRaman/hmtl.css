@@ -1,5 +1,6 @@
 
 export interface ProductData {
+    id: string
     productImage: string;
     saleImage: string;
     likeIcon: string;

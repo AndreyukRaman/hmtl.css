@@ -1,7 +1,11 @@
-// src/app/components/Product.tsx
+
+"use client";
+
+
 import Image from "next/image";
 import {ProductData} from "@/app/components/products.types";
 import { Montserrat } from "next/font/google";
+import Link from "next/link";
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -10,6 +14,7 @@ const montserrat = Montserrat({
 
 export default function Product(props: ProductData) {
     const {
+        id,
         productImage,
         saleImage,
         likeIcon,
@@ -72,11 +77,15 @@ export default function Product(props: ProductData) {
                     <h5 className={`!${montserrat.className} font-bold text-[16px] leading-[24px] text-center tracking-[0.1px] text-[#2435A1] flex-none order-1 flex-grow-0`}>{priceNew}</h5>
                 </div>
 
-                <button className="flex flex-row items-center px-[20px] py-[10px] gap-[10px] w-[141px] h-[44px] border border-[#FF6551] rounded-[37px]">
-                    <h6 className={`${montserrat.className} text-[14px] leading-[24px] text-[#FF6551] font-bold`}>
+                    <Link href={`/product/${id}`}>
+                <button className="  group flex flex-row items-center px-[20px] py-[10px] gap-[10px] w-[141px] h-[44px] border border-[#FF6551] rounded-[37px]  transition-colors duration-200 hover:bg-[#FF6551] hover:scale-105
+             cursor-pointer">
+
+                    <h6 className={`${montserrat.className} text-[14px] leading-[24px] text-[#FF6551] font-bold group-hover:text-white`}>
                         {buttonText}
                     </h6>
                 </button>
+                    </Link>
             </div>
         </div>
     );
